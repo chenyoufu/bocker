@@ -1,4 +1,7 @@
 # Bocker
+
+之前的docker V1 下载镜像的API已经过时了，merge了别人的PR，可以正常使用。         -- Tue Mar 27 15:07:39 CST 2018
+
 Docker implemented in around 100 lines of bash.
 
   * [Prerequisites](#prerequisites)
@@ -106,7 +109,7 @@ $ cat /sys/fs/cgroup/memory/ps_42188/memory.limit_in_bytes
 
 ## Functionality: Currently Implemented
 
-* `docker build` †
+* `docker build`
 * `docker pull`
 * `docker images`
 * `docker ps`
@@ -118,7 +121,7 @@ $ cat /sys/fs/cgroup/memory/ps_42188/memory.limit_in_bytes
 * Networking
 * Quota Support / CGroups
 
-† `bocker init` provides a very limited implementation of `docker build`
+`bocker init` provides a very limited implementation of `docker build`
 
 ## Functionality: Not Yet Implemented
 
